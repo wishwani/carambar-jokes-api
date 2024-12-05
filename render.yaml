@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: joke-api
+    env: node
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    healthCheckPath: "/"
+    autoDeploy: true
+    branch: main
+    instances: 1
+    region: oregon # You can choose another region if you want
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        value: "<Your Database URL if applicable>"
