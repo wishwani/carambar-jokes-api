@@ -24,7 +24,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: 'http://0.0.0.0:3000', // Update with your deployed backend URL when available
+        url: 'http://localhost:3000', // Update with your deployed backend URL when available
       },
     ],
   },
@@ -40,6 +40,6 @@ app.use('/jokes', jokesRoutes);
 // Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Server is running on http://0.0.0.0:${PORT}`);
-  console.log(`Swagger Docs available at http://0.0.0.0:${PORT}/api-docs`);
+  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Swagger Docs available at http://localhost:${PORT}/api-docs`);
 });
