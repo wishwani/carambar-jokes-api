@@ -38,7 +38,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 app.use('/jokes', jokesRoutes);
 
 // Start the server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
   console.log(`Server is running on https://carambar-jokes-api-cf5j.onrender.com:${PORT}`);
   console.log(`Swagger Docs available at https://carambar-jokes-api-cf5j.onrender.com:${PORT}/api-docs`);
