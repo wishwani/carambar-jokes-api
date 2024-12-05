@@ -24,7 +24,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: 'https://carambar-jokes-api-cf5j.onrender.com:3000', 
+        url: 'https://carambar-jokes-api-cf5j.onrender.com', 
       },
     ],
   },
@@ -40,6 +40,6 @@ app.use('/jokes', jokesRoutes);
 // Start the server
 const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
-  console.log(`Server is running on https://carambar-jokes-api-cf5j.onrender.com:${PORT}`);
-  console.log(`Swagger Docs available at https://carambar-jokes-api-cf5j.onrender.com:${PORT}/api-docs`);
+  console.log(`Server is running on https://carambar-jokes-api-cf5j.onrender.com`);
+  console.log(`Swagger Docs available at https://carambar-jokes-api-cf5j.onrender.com/api-docs`);
 });
