@@ -24,7 +24,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: 'http://localhost:3000', // Update with your deployed backend URL when available
+        url: 'http://0.0.0.0:3000', // Update with your deployed backend URL when available
       },
     ],
   },
