@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 app.use(cors());
-// Root Route (Optional)
+// Root Route
 app.get('/', (req, res) => {
   res.send('Welcome to the Carambar Joke API!');
 });
@@ -28,7 +28,7 @@ const swaggerOptions = {
       },
     ],
   },
-  apis: ['./routes/*.js'], // Path to your route files
+  apis: ['./routes/*.js'],
 };
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
